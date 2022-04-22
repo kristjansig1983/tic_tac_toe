@@ -31,10 +31,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _GameScreen extends State<MyHomePage> {
-
   Game game = Game();
 
-  void initState(){
+  void initState() {
     super.initState();
     //TODO - inititalize game board
     print('game');
@@ -62,19 +61,14 @@ class _GameScreen extends State<MyHomePage> {
                       children: List.generate(9, (index) {
                         return InkWell(
                             child: Container(
-                              width: 200, //TODO - setja í breytu
-                              height: 200,//TODO - setja í breytu
-                              decoration: BoxDecoration(
-                                color: MainColor.white,
-                                borderRadius: BorderRadius.circular(16.0),
-                              ),
-                            )
-                        );
-                      }
-
-                      )
-                  )
-              ),
+                          width: 200, //TODO - setja í breytu
+                          height: 200, //TODO - setja í breytu
+                          decoration: BoxDecoration(
+                            color: MainColor.white,
+                            borderRadius: BorderRadius.circular(16.0),
+                          ),
+                        ));
+                      }))),
               ElevatedButton.icon(
                 onPressed: () {
                   //TODO - setState()
@@ -84,9 +78,7 @@ class _GameScreen extends State<MyHomePage> {
                 icon: Icon(Icons.replay),
                 label: Text('Repeat game'),
               )
-            ]
-        ),
-
+            ]),
       ),
     );
   }
