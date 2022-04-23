@@ -7,3 +7,7 @@ class MainColor {
   static Color primaryButton = Color(0xFFf25601);
   static Color white = Color(0xFFFFFFFF);
 }// TODO Implement this library.
+
+class FontSize {
+  static double large = 56;
+}
